@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Under Construction</title>
     <style>
+        /* This centers the video and text on the page */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #000;
+            color: #fff;
+        }
+        /* This makes the video take up the full width of the page */
+        video {
+            width: 100%;
+            height: auto;
+        }
+        /* Include the custom font */
         @font-face {
             font-family: 'Nordique Pro Cyrillic SemiBold';
             src: url('NordiquePro-Semibold.woff2') format('woff2'),
                  url('NordiquePro-Semibold.ttf') format('truetype');
-            font-weight: semi-bold;
+            font-weight: 600;
             font-style: normal;
+            font-display: swap;
         }
-
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-
-        #header {
-            font-family: 'Nordique Pro Cyrillic SemiBold';
-            font-size: 48px;
-            text-align: center;
-            color: #ffffff;
-            padding: 20px;
+        h1 {
+            font-family: 'Nordique Pro Cyrillic SemiBold', sans-serif;
             background-color: #ffffff;
-            color: black;
-        }
-
-        #video-background {
-            position: absolute;
-            right: 0; 
-            bottom: 0;
-            min-width: 100%; 
-            min-height: 100%;
-            width: auto; 
-            height: auto;
-            z-index: -1000;
+            color: #000000;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div id="header">Under Construction</div>
-    <video autoplay loop muted id="video-background">
+    <h1>Under Construction</h1>
+    <video autoplay loop muted>
         <source src="Untitled-6.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
